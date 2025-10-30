@@ -21,7 +21,7 @@
   </header>
 
   <main id="main-content">
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section fade-in">
       <h1>Hola, soy <span class="name-highlight">JPCorrea</span></h1>
       <p>Bienvenido al sitio donde convergen la mecatrónica, los sistemas ciberfísicos y mi visión de futuro.</p>
       <div class="button-group">
@@ -30,19 +30,22 @@
       </div>
     </section>
 
-    <section id="whoami">
+    <section id="whoami" class="fade-in">
       <h2>Quién soy</h2>
       <p>Soy un apasionado de la mecatrónica con la mirada puesta en construir sistemas que transformen la realidad. Me especializo en impresión 3D, diseño mecánico y la integración de sensores y actuadores para sistemas inteligentes.</p>
       <p>Mi misión: convertirme en un líder del futuro, combinar ingeniería, negocios y seducción de ideas para generar impacto. Este portafolio es el testimonio de ese camino.</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="fade-in">
       <h2>Proyectos destacados</h2>
 
-      <article id="project-spinner" class="project-item">
+      <article id="project-spinner" class="project-item fade-in">
         <h3>Proyecto Fidget Spinner</h3>
-        <p>Diseño e impresión 3D de un fidget spinner de alta precisión, probado para girar más de 3 minutos en carga estándar y con eje de acero inoxidable. Enlace a los archivos STL para impresión o modificación.</p>
-        <img src="spinner-1.jpg" alt="Vista frontal del fidget spinner impreso en 3D">
+        <p>Diseño e impresión 3D de un fidget spinner de alta precisión, probado para girar más de <strong>3 minutos</strong> en carga estándar y con eje de acero inoxidable. Incluye versiones 3 palas y 2 palas para distintas experiencias.</p>
+        <div class="img-container">
+          <img src="spinner-1.jpg" alt="Vista frontal del fidget spinner impreso en 3D">
+          <div class="sticker sticker-top-right">⚙</div>
+        </div>
         <a class="doc-link" href="jps-fidget-spinner-1-3.stl" download>Descargar versión 1 – 3 palas</a>
         <ul class="file-list">
           <li><a href="jps-fidget-spinner-1-3.stl">jps-fidget-spinner-1-3.stl</a></li>
@@ -50,10 +53,13 @@
         </ul>
       </article>
 
-      <article id="project-cube" class="project-item">
+      <article id="project-cube" class="project-item fade-in">
         <h3>Proyecto Cubo Mecatrónico</h3>
-        <p>Diseño modular de un cubo mecatrónico, ensamblable sin tornillos, con sensores integrados para medir orientación. Plano SVG disponible para fabricación personal o modificación.</p>
-        <img src="cubo1.jpg" alt="Imagen del cubo mecatrónico montado">
+        <p>Diseño modular de un cubo mecatrónico, ensamblable sin tornillos, con sensores integrados para medir orientación en 3 ejes. Plano SVG disponible para fabricación personal o modificación.</p>
+        <div class="img-container">
+          <img src="cubo1.jpg" alt="Imagen del cubo mecatrónico montado">
+          <div class="sticker sticker-bottom-left">🔧</div>
+        </div>
         <a class="doc-link" href="cubo-numero1.svg" download>Descargar plano del cubo (SVG)</a>
         <ul class="file-list">
           <li><a href="cubo-numero1.svg">cubo-numero1.svg</a></li>
@@ -62,10 +68,16 @@
 
     </section>
 
-    <footer>
+    <footer class="fade-in">
       <p>© 2025 JPCorrea. Todos los derechos reservados.</p>
       <p><a href="mailto:contacto@jpcorrea.com">contacto@jpcorrea.com</a></p>
     </footer>
   </main>
+
+  <div class="floating-stickers">
+    <div class="sticker sticker-float-1">🚀</div>
+    <div class="sticker sticker-float-2">💡</div>
+    <div class="sticker sticker-float-3">🔌</div>
+  </div>
 </body>
 </html>
