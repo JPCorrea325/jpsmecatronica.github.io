@@ -2,144 +2,70 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>MR MEXATRONICO</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-    :root {
-      --bg: #0a0a0a;
-      --text-primary: #ffffff;
-      --accent-purple: #9B30FF;
-      --accent-blue: #00B8FF;
-      --accent-orange: #FF6F00;
-      --accent-red: #FF003C;
-      --neon-green: #00FF9F;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text-primary);
-      font-family: 'Orbitron', sans-serif;
-      scroll-behavior: smooth;
-    }
-    nav {
-      background: #111;
-      padding: 10px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: var(--text-primary);
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 1.2em;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: var(--accent-purple);
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 3em;
-      color: var(--accent-blue);
-      text-shadow: 0 0 8px var(--accent-blue), 0 0 16px var(--neon-green);
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    h2 {
-      font-size: 2.2em;
-      color: var(--accent-orange);
-      margin-top: 40px;
-      text-shadow: 0 0 6px var(--accent-orange);
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    .doc-link {
-      display: inline-block;
-      margin: 20px 0;
-      padding: 12px 24px;
-      color: var(--bg);
-      background: var(--accent-red);
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: background 0.3s, box-shadow 0.3s;
-      box-shadow: 0 0 8px var(--accent-red);
-    }
-    .doc-link:hover {
-      background: var(--accent-purple);
-      box-shadow: 0 0 12px var(--accent-purple);
-      color: #fff;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px auto;
-      border: 4px solid var(--accent-blue);
-      box-shadow: 0 0 12px var(--accent-blue);
-    }
-    .file-list {
-      margin: 20px 0;
-      padding: 0;
-      list-style: none;
-    }
-    .file-list li {
-      margin-bottom: 10px;
-      color: var(--text-primary);
-    }
-    .file-list li a {
-      color: var(--accent-blue);
-      text-decoration: none;
-    }
-    .file-list li a:hover {
-      text-color: var(--neon-green);
-    }
-  </style>
+  <title>JPCorrea – Mecatrónica & Sistemas Ciberfísicos</title>
+  <meta name="description" content="Portafolio de JPCorrea: proyectos en mecatrónica, impresión 3D y sistemas ciberfísicos. Fidget Spinner, Cubo Mecatrónico y más.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-  <nav>
-    <a href="#home">Inicio</a>
-    <a href="#proyectos-spinner">Fidget Spinner</a>
-    <a href="#proyectos-cubo">Cubo Mecatrónico</a>
-  </nav>
+  <header>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="#home" aria-current="page">Inicio</a></li>
+        <li><a href="#whoami">Quién soy</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section id="home">
-    <h1>Hola, soy JPCorrea</h1>
-    <p>Bienvenido al sitio donde encontrarás todo acerca de mecatrónica y sistemas ciberfísicos.</p>
-  </section>
+  <main id="main-content">
+    <section id="home" class="hero-section">
+      <h1>Hola, soy <span class="name-highlight">JPCorrea</span></h1>
+      <p>Bienvenido al sitio donde convergen la mecatrónica, los sistemas ciberfísicos y mi visión de futuro.</p>
+      <div class="button-group">
+        <a class="btn" href="#whoami">Quién soy</a>
+        <a class="btn" href="#projects">Ver proyectos</a>
+      </div>
+    </section>
 
-<section id="proyectos-spinner">
-  <h2>Proyecto Fidget Spinner</h2>
-  <p>Aquí puedes ver los documentos y la imagen de cómo queda el spinner.</p>
-  <img src="spinner-1.jpg" alt="Imagen del Fidget Spinner">
-  
-  <a class="doc-link" href="jps-fidget-spinner-1-3.stl" download>Descargar STL del Spinner</a>
-  <ul class="file-list">
-    <li><a href="jps-fidget-spinner-1-3.stl">jps-fidget-spinner-1-3.stl</a></li>
-    <li><a href="jps-fidget-spinner-2-2.stl">jps-fidget-spinner-2-2.stl</a></li>
-  </ul>
-</section>
+    <section id="whoami">
+      <h2>Quién soy</h2>
+      <p>Soy un apasionado de la mecatrónica con la mirada puesta en construir sistemas que transformen la realidad. Me especializo en impresión 3D, diseño mecánico y la integración de sensores y actuadores para sistemas inteligentes.</p>
+      <p>Mi misión: convertirme en un líder del futuro, combinar ingeniería, negocios y seducción de ideas para generar impacto. Este portafolio es el testimonio de ese camino.</p>
+    </section>
 
-<section id="proyectos-cubo">
-  <h2>Proyecto Cubo Mecatrónico</h2>
-  <p>Aquí puedes ver los planos para hacer el cubo y la imagen de cómo queda.</p>
-  <img src="cubo1.jpg" alt="Imagen del Cubo Mecatrónico">
-  
-  <a class="doc-link" href="cubo-numero1.svg" download>Descargar Plano del Cubo</a>
-  <ul class="file-list">
-    <li><a href="cubo-numero1.svg">cubo-numero1.svg</a></li>
-  </ul>
-</section>
+    <section id="projects">
+      <h2>Proyectos destacados</h2>
 
+      <article id="project-spinner" class="project-item">
+        <h3>Proyecto Fidget Spinner</h3>
+        <p>Diseño e impresión 3D de un fidget spinner de alta precisión, probado para girar más de 3 minutos en carga estándar y con eje de acero inoxidable. Enlace a los archivos STL para impresión o modificación.</p>
+        <img src="spinner-1.jpg" alt="Vista frontal del fidget spinner impreso en 3D">
+        <a class="doc-link" href="jps-fidget-spinner-1-3.stl" download>Descargar versión 1 – 3 palas</a>
+        <ul class="file-list">
+          <li><a href="jps-fidget-spinner-1-3.stl">jps-fidget-spinner-1-3.stl</a></li>
+          <li><a href="jps-fidget-spinner-2-2.stl">jps-fidget-spinner-2-2.stl</a></li>
+        </ul>
+      </article>
+
+      <article id="project-cube" class="project-item">
+        <h3>Proyecto Cubo Mecatrónico</h3>
+        <p>Diseño modular de un cubo mecatrónico, ensamblable sin tornillos, con sensores integrados para medir orientación. Plano SVG disponible para fabricación personal o modificación.</p>
+        <img src="cubo1.jpg" alt="Imagen del cubo mecatrónico montado">
+        <a class="doc-link" href="cubo-numero1.svg" download>Descargar plano del cubo (SVG)</a>
+        <ul class="file-list">
+          <li><a href="cubo-numero1.svg">cubo-numero1.svg</a></li>
+        </ul>
+      </article>
+
+    </section>
+
+    <footer>
+      <p>© 2025 JPCorrea. Todos los derechos reservados.</p>
+      <p><a href="mailto:contacto@jpcorrea.com">contacto@jpcorrea.com</a></p>
+    </footer>
+  </main>
 </body>
 </html>
