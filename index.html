@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>MR MEXATRONICO</title>
+    <style>
+      /* Colores neón / cyberpunk */
+      :root {
+        --neon-cyan: #00ff9f;
+        --neon-magenta: #d600ff;
+        --neon-blue: #00b8ff;
+        --dark-bg: #0a0a0a;
+        --text-glow: var(--neon-cyan);
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--dark-bg);
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 60px;
+        font-size: 3em;
+        color: var(--neon-magenta);
+        text-shadow:
+          0 0 8px var(--neon-magenta),
+          0 0 16px var(--neon-magenta),
+          0 0 24px var(--neon-cyan),
+          0 0 32px var(--neon-cyan);
+      }
+
+      p {
+        font-size: 1.3em;
+        color: #ccc;
+        text-shadow: 0 0 6px var(--neon-blue);
+      }
+
+      .container {
+        margin: 40px auto;
+        max-width: 800px;
+        padding: 20px;
+        background: rgba(10,10,10,0.8);
+        border: 2px solid var(--neon-cyan);
+        box-shadow: 0 0 16px var(--neon-cyan);
+        border-radius: 8px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 3px solid var(--neon-magenta);
+        box-shadow: 0 0 12px var(--neon-magenta);
+        margin: 20px 0;
+      }
+
+      a.document-link {
+        display: inline-block;
+        margin: 15px;
+        padding: 10px 20px;
+        color: #0a0a0a;
+        background: var(--neon-cyan);
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+      }
+
+      a.document-link:hover {
+        background-color: var(--neon-magenta);
+        box-shadow: 0 0 12px var(--neon-magenta);
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hola, soy [JPCorrea]</h1>
-    <p>BIENVENIDO AL SITIO DONDE ENCONTRARAS TODO ACERCA DE MECATRONICA Y SISTEMAS CIBERFISICOS.</p>
+    <div class="container">
+      <h1>Hola, soy JPCorrea</h1>
+      <p>Bienvenido al sitio donde encontrarás todo acerca de mecatrónica y sistemas ciberfísicos.</p>
+
+      <!-- Ejemplo imagen -->
+      <img src="cubo1.jpg" alt="Foto del cubo con cortadora láser">
+
+      <!-- Ejemplo enlace a documento -->
+      <a class="document-link" href="jps-fidget-spinner-1-3.stl" download>Descargar Fidget Spinner STL</a>
+    </div>
   </body>
 </html>
